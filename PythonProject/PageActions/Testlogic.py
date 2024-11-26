@@ -1,0 +1,36 @@
+import time
+
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+
+from PageObjects.LanguagePage import Page
+
+
+class Logic :
+
+    def __init__(self,languages,driver):
+        self.driver=driver
+        self.languages = languages
+
+    def test_logic(self):
+
+        #Creating object Languagepage function
+
+        Languagepage_obj = Page(driver)
+        Languagepage_obj.launch_chrome()
+        final_count = Languagepage_obj.articles_count(self.languages)
+        return final_count
+
+# Chrome Browser Launching
+
+ser_obj = Service()
+driver = webdriver.Chrome(service=ser_obj)
+driver.implicitly_wait(10)
+
+# Passing the Languages in list
+languages = ["English","German"]
+
+#Creating Object for test action class
+object = Logic(languages,driver)
+final_count = object.test_logic()
+print(final_count)
