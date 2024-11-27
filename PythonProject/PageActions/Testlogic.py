@@ -6,13 +6,13 @@ from selenium.webdriver.chrome.service import Service
 from PageObjects.LanguagePage import Page
 
 
-class Logic :
+class ArticlesCount :
 
     def __init__(self,languages,driver):
         self.driver=driver
         self.languages = languages
 
-    def test_logic(self):
+    def findTotalArticlesByLanguages(self):
 
         #Creating object Languagepage function
 
@@ -32,5 +32,5 @@ languages = ["English","German"]
 
 #Creating Object for test action class
 object = Logic(languages,driver)
-final_count = object.test_logic()
+final_count = object.findTotalArticlesByLanguages()
 print(final_count)
