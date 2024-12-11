@@ -37,3 +37,6 @@ final_count = object.findTotalArticlesByLanguages()
 print(final_count)
 test1="jhdgsf"
 test='jhfv'
+test2="kjdfhv"
+test='jhfv'
+
