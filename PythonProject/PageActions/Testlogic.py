@@ -4,8 +4,6 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
 from PageObjects.LanguagePage import Page
-
-
 class ArticlesCount :
 
     def __init__(self,languages,driver):
