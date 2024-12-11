@@ -8,6 +8,7 @@ class ArticlesCount :
 
     def __init__(self,languages,driver):
         self.driver=driver
+        val2="jhf"
         val1="jdfhvj"
         self.languages = languages
 
