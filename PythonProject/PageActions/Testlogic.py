@@ -10,6 +10,7 @@ class ArticlesCount :
         self.driver=driver
         val2="jhf"
         val1="jdfhvj"
+        val="khfvb"
         self.languages = languages
 
     def findTotalArticlesByLanguages(self):
