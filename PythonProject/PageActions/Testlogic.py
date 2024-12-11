@@ -8,6 +8,7 @@ class ArticlesCount :
 
     def __init__(self,languages,driver):
         self.driver=driver
+        val="khfvb"
         self.languages = languages
 
     def findTotalArticlesByLanguages(self):
